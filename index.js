@@ -11,7 +11,7 @@ const url = 'https://parade.com/944054/parade/knock-knock-jokes/';
 
 //generate random number between 11 and 188 - these are the locations of the p's containing knock knock jokes
 const randomNum = () => {
-    num = Math.floor((Math.random() * 177) + 11);
+    num = Math.floor((Math.random() * 178) + 11);
     return num;
 };
 
@@ -45,7 +45,7 @@ getJoke();
 
 
 
-app.listen(PORT/*, () => console.log(`server running on PORT ${PORT}`)*/); 
+app.listen(PORT); 
 
 
 //document.querySelector("#main-content > section.m-component-detail > article > div > div > section > div.l-grid--content-body > div.m-detail--body > p:nth-child(106)")
