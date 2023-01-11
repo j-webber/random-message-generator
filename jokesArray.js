@@ -126,7 +126,8 @@ const jokes = [
       'Who’s there?\n' +
       'To.\n' +
       'To who?\n' +
-      'Actually, it’s to whom.33. Knock, knock.\n' +
+      'Actually, it’s to whom.',
+    '33. Knock, knock.\n' +
       'Who’s there?\n' +
       'Lettuce.\n' +
       'Lettuce who?\n' +
@@ -332,4 +333,27 @@ const jokes = [
       'Al who?\n' +
       'Al give you a hug if you open this door!',
     "96. Knock, knock.\nWho's there?\nAmish.\nAmish who?\nYou're not a shoe!",
+    '97. Knock, knock.\n' +
+      "Who's there?\n" +
+      'Alfie.\n' +
+      'Alfie who?\n' +
+      'Alfie terrible if you don’t let me in!',
+    '98. Knock, knock.\n' +
+      "Who's there?\n" +
+      'Alien.\n' +
+      'Alien who?\n' +
+      'Um, how many aliens do you know?',
+    "99. Knock, knock.\nWho's there?\nAndrew.\nAndrew who?\nAndrew a picture!",
+    '100. Knock, knock.\n' +
+      "Who's there?\n" +
+      'Dwayne.\n' +
+      'Dwayne who?\n' +
+      "Dwayne the tub, I'm dwowning.",
+    '101. Knock, knock.\n' +
+      'Who’s there?\n' +
+      'Armageddon.\n' +
+      'Armageddon who?\n' +
+      'Armageddon a little bored. Let’s go out.'
   ];
+
+  exports.jokes = jokes;

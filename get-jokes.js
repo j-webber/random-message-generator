@@ -5,6 +5,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { response } = require('express');
 const express = require('express');
+const util = require('util');
 
 const app = express();
 
@@ -24,8 +25,8 @@ const getJoke = () => {
                 jokes.push(bodyText)
             })
             };
-
-            console.log(jokes);
+            
+            console.log(util.inspect(jokes, { maxArrayLength: null }))
         })
         .catch(err => console.log(err))
 }
