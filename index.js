@@ -1,7 +1,5 @@
-//const jokesArray = require('./jokesArray');
-//const $ = jokesArray.jokes;
 const $ = jokes;
-const len = $.length;
+const len = $.length - 1;
 
 //generate random number between 0 and the length of jokes array
 const randomNum = () => {
@@ -17,12 +15,8 @@ const getJoke = () => {
     } else {
         jokesString = joke.toString(); // change array to string
         jokesString = jokesString.replace(/(\d+)(. )/, ''); //replace the leading numbers and '. ' with a blank space
-        //console.log(jokesString); 
-        if (jokesString === undefined) {
-            getJoke();
-        } else {
-            return jokesString;
-        };
+ 
+        return jokesString;
     };
 };
 
@@ -31,7 +25,10 @@ const jokeDiv = document.getElementById('joke');
 
 const addJoke = () => {
     jokeDiv.innerText = getJoke();
-}
+    if (jokeDiv.innerText === "undefined") { //if undefined is printed to the browser rerun getJoke
+        jokeDiv.innerText = getJoke();
+    }
+};
 
 btn.addEventListener('click', addJoke);
 

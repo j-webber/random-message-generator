@@ -355,5 +355,3 @@ const jokes = [
       'Armageddon who?\n' +
       'Armageddon a little bored. Let’s go out.'
   ];
-
-  //exports.jokes = jokes;
